@@ -62,7 +62,7 @@ def main():
     arg_parser = setup_args()
     parsed_args = arg_parser.parse_args()
     # step 1: Setup common dictionary
-    reps_to_setup = {'tools': ['clang'], 'projects': ['libcxx', 'libcxxabi']}
+    reps_to_setup = {'tools': ['clang']}
     if parsed_args.output_folder is None:
         usage()
     sparse_dir = os.path.join(parsed_args.output_folder, "sparse")
